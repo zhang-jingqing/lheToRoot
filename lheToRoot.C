@@ -83,9 +83,9 @@ void lheToRoot() {
   treeEvent->Branch("NUP", &NUP, "NUP/I"); //N particles
   treeEvent->Branch("IDPRUP", &IDPRUP, "IDPRUP/I");
   treeEvent->Branch("IDUP", IDUP, "IDUP[NUP]/I"); //pdg id of the particle
-  treeEvent->Branch("ISTUP", &ISTUP, "ISTUP[NUP]/I"); //status of the particle: -1 means incoming, 1 means final, 2 means intermediate
-  treeEvent->Branch("MOTHUP", &MOTHUP, "MOTHUP[NUP][2]/I"); //mother's index in this array
-  treeEvent->Branch("ICOLUP", &ICOLUP, "ICOLUP[NUP][2]/I");
+  treeEvent->Branch("ISTUP", ISTUP, "ISTUP[NUP]/I"); //status of the particle: -1 means incoming, 1 means final, 2 means intermediate
+  treeEvent->Branch("MOTHUP", MOTHUP, "MOTHUP[NUP][2]/I"); //mother's index in this array
+  treeEvent->Branch("ICOLUP", ICOLUP, "ICOLUP[NUP][2]/I");
   treeEvent->Branch("XWGTUP", &XWGTUP, "XWGTUP/D");
   treeEvent->Branch("SCALUP", &SCALUP, "SCALUP/D");
   treeEvent->Branch("AQEDUP", &AQEDUP, "AQEDUP/D");
